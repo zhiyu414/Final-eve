@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eve非官方網站</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"/>
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container2">
+        <header>
+            <div class="nav">
+                <nav class="navbar navbar-expand-lg bg-black navbar-dark fixed-top" id="navbarmain">
+                    <a href="index.html" class="home">
+                        <img src="img/img_sign.png" alt="sign"class="img_sign">
+                    </a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  
+
+
+                  <div class=" collapse navbar-collapse "  id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" >
+                                歌單
+                            </a>
+                            <ul class="dropdown-menu" >
+                                <li><a class="dropdown-item" href="songs.html">原創</a></li>
+                                <li><a class="dropdown-item" href="songscover.html">翻唱</a></li>
+                            </ul>
+                          </li>
+                        
+                     
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">演唱會</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" >
+                            合作
+                        </a>
+                        <ul class="dropdown-menu" >
+                          <li>
+                          <a class="dropdown-item" href="game.html">遊戲</a>
+                          </li>
+                          <li>
+                          <a class="dropdown-item" href="cooperate.html">品牌</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link " href="#" >最新消息</a>
+                      </li> 
+                      <li class="nav-item">
+                        <a class="nav-link " href="#" >聯絡方式</a>
+                      </li> 
+                    </ul>
+                   
+                    </div>
+                    
+            </div> 
+                </nav>
+                <div class="box_banner"></div>
+            
+            
+        </header>
+            
+
+
+        
+        <div class="box_pic">
+            <!-- <div  class="pic_container">
+                <div class="ant1">
+                    <img  class="picture1 "alt="picture" src="img/picture1.png">
+                   
+                </div>  
+                <div class="ant2">
+                    <img  class="picture2 "alt="picture" src="img/picture2.png">
+                </div>
+            </div> -->
+            <script language="JavaScript">
+                    
+                var slidespeed=5000
+                var slideimages=new Array("img/picture-1.png","img/picture-2.png","img/img_pic5.png")
+                var imageholder=new Array()
+                var ie55=window.createPopup
+                for (i=0;i<slideimages.length;i++){
+                imageholder[i]=new Image()
+                imageholder[i].src=slideimages[i]
+                }
+                function gotoshow(){
+                window.location=slidelinks[whichlink]
+                }
+            
+                </script>
+                <img class="song_img" src="img/picture-1.png" name="slide" border=0 style="filter:progid:DXImageTransform.Microsoft.Pixelate(MaxSquare=15,Duration=1)" align="middle">
+                <script language="JavaScript1.1">
+                
+                var whichlink=0
+                var whichimage=0
+                var pixeldelay=(ie55)? document.images.slide.filters[0].duration*1000 : 0
+                function slideit(){
+                if (!document.images) return
+                if (ie55) document.images.slide.filters[0].apply()
+                document.images.slide.src=imageholder[whichimage].src
+                if (ie55) document.images.slide.filters[0].play()
+                whichlink=whichimage
+                whichimage=(whichimage<slideimages.length-1)? whichimage+1 : 0
+                setTimeout("slideit()",slidespeed+pixeldelay)
+                }
+                slideit()
+                
+                </script>
+           
+
+           
+        </div>
+        <h1 class="song_title"> 歌單>原創</h1>
+        <div class="song-top"> 
+            <img  class="img_pic6 "alt="img/pic6" src="img/img_pic6.jpg">
+          <div class="songs">
+            
+              <div class="s_line"></div>
+              <div class="song">
+                <div class="song-r">
+                  <img class="music_img" alt="music-icon" src="img/music.png">
+                  <p >群青讃歌</p> 
+                </div>
+              <p class="songdate">2021.09.30</p>
+            </div>
+              <div class="s_line"></div>
+              <div class="song">
+                <div class="song-r">
+                  <img class="music_img" alt="music-icon" src="img/music.png">
+                  <p >遊生夢死</p> 
+                </div>
+                <p class="songdate">2021.09.30</p>
+              </div>
+              <div class="s_line"></div>
+              <div class="song">
+                <div class="song-r">
+                  <img class="music_img" alt="music-icon" src="img/music.png">
+                  <p >夜は仄か </p> 
+              </div>
+              <p class="songdate">2021.09.30</p>
+            </div>
+              <div class="s_line"></div>
+              <div class="song">
+                <div class="song-r">
+                  <img class="music_img" alt="music-icon" src="img/music.png">
+                  <p >いのちの食べ方（DanceMix ver.）</p> 
+              </div>
+              <p class="songdate">2021.09.30</p>
+            </div>
+              <div class="s_line"></div>
+              <div class="song">
+                <div class="song-r">
+                  <img class="music_img" alt="music-icon" src="img/music.png">
+                  <p >ドラマツルギー（Live Film ver.）</p> 
+              </div>
+              <p class="songdate">2021.09.30</p>
+            </div>
+            <div class="s_line"></div>
+            <div class="song">
+              <div class="song-r">
+                <img class="music_img" alt="music-icon" src="img/music.png">
+                <p >平行線</p> 
+              </div>
+              <p class="songdate">2021.02.05</p>
+            </div>
+            <div class="s_line"></div>
+            <div class="song">
+              <div class="song-r">
+                <img class="music_img" alt="music-icon" src="img/music.png">
+                <p >夜於朦朧 </p> 
+              </div>
+              <p class="songdate">2021.04.30</p>
+            </div>
+            <div class="s_line"></div>
+            <div class="song">
+              <div class="song-r">
+                <img class="music_img" alt="music-icon" src="img/music.png">
+                <p >廻廻奇譚</p> 
+              </div>
+              <p class="songdate">2020.12.23</p>
+            </div>
+            <div class="s_line"></div>
+            <div class="song">
+              <div class="song-r">
+                <img class="music_img" alt="music-icon" src="img/music.png">
+                <p >蒼のワルツ </p> 
+              </div>
+              <p class="songdate">2020.12.23</p>
+            </div>
+            <div class="s_line"></div>
+            <div class="song">
+              <div class="song-r">
+                <img class="music_img" alt="music-icon" src="img/music.png">
+                <p >心海 </p> 
+              </div>
+              <p class="songdate">2020.12.23</p>
+            </div>
+            <div class="s_line"></div>
+            <div class="song">
+              <div class="song-r">
+                <img class="music_img" alt="music-icon" src="img/music.png">
+                <p >宵の明星</p> 
+              </div>
+              <p class="songdate">2020.12.23</p>
+            </div>
+            <div class="s_line"></div>
+            <div class="song">
+              <div class="song-r">
+                <img class="music_img" alt="music-icon" src="img/music.png">
+                  <p >遊遊冥冥 </p> 
+              </div>
+              <p class="songdate">2020.12.23</p>
+            </div>
+            <div class="s_line"></div>
+            <div class="song">
+              <div class="song-r">
+                <img class="music_img" alt="music-icon" src="img/music.png">
+                  <p >約束</p> 
+              </div>
+              <p class="songdate">2020.12.23</p>
+            </div>
+            <div class="s_line"></div>
+
+        </div>
+        <img  class="img_coop "alt="img/pic_cooperate.png" src="img/pic_cooperate.png">
+        
+        </div>
+
+        <footer>
+          <div class="box_footer2">
+              <div class="social">
+                  <a  href="https://twitter.com/oo0eve0oo?lang=ja" target="_blank">
+                      <img  class="social1 "alt="twitter" src="img/img_social1.png">
+                  </a>
+                  <a   href="https://www.instagram.com/eve_harapeco/" target="_blank">
+                      <img class="social2"  alt="instagram" src="img/img_social3.png">
+                  </a>
+                  <a   href="https://www.youtube.com/user/ooo0eve0ooo" target="_blank">
+                      <img class="social3"  alt="youtube" src="img/img_social2.png">
+                  </a>
+                  <a   href="https://www.nicovideo.jp/user/10103681/mylist/17255242" target="_blank">
+                      <img class="social4"  alt="niconico" src="img/img_social4.png">
+                  </a>
+                  <a   href="https://space.bilibili.com/399111648" target="_blank">
+                      <img class="social5"  alt="bilibili" src="img/img_social5.png">
+                  </a>
+             
+              </div>
+              <p class="COPYRIGHT">COPYRIGHT@eve.unofficialWebL.ALL RIGHTS RESERVED.</p>
+          </div>
+        </footer>
+    </div>
+</body>
+
+    
+
+</html>
