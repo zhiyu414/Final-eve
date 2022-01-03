@@ -3,7 +3,7 @@ $(function(){
         dots: true,
         infinite: true,
         speed: 300,
-        slidesToShow: 1,
+        slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
@@ -12,7 +12,7 @@ $(function(){
         {
           breakpoint: 1024,
           settings: {
-            slidesToShow: 1,
+            slidesToShow: 3,
             slidesToScroll: 1,
             infinite: true,
             arrows: false,
