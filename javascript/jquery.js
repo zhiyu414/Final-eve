@@ -48,7 +48,7 @@ $('.mvpic').slick({
 $(function() {
   $('#spinner').fadeIn(2000);
  
-  // $('#spinner').fadeOut(5000);
+  $('#spinner').fadeOut(5000);
   $('#spinner').fadeOut(100);
 
 })
