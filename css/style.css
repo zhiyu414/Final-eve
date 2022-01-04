@@ -186,6 +186,9 @@ height:20px;
 margin-left: 3px;
 
 }
+.img_right:hover{
+  transform: scale(1.2);
+}
 .img_self{
 width: 461px;
 height: 442px;
@@ -845,24 +848,24 @@ display:none;
   height: 26px;
 }
 .social1:hover{
-  width: 40px;
-  height: 40px;
+  transform: scale(1.2);
+  
 }
 .social2:hover{
-  width: 40px;
-  height: 40px;
+  transform: scale(1.2);
+  
 }
 .social3:hover{
-  width: 40px;
-  height: 40px;
+  transform: scale(1.2);
+  
 }
 .social4:hover{
-  width: 40px;
-  height: 40px;
+  transform: scale(1.2);
+  
 }
 .social5:hover{
-  width: 40px;
-  height: 40px;
+  transform: scale(1.2);
+  
 }
 #spinner {
   position: fixed;
